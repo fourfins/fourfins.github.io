@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Nav Bar */
+
+#logo {
+    height: 100%;
+    width: 100%;
+    max-height: 65px;
+    max-width: 85px;
+    padding-left: 10px;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	width: 99vw;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* Nav Bar Media Queries */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+/* Container */
+
+.container {
+	position: relative;
+	height: 100vh;
+	width: 99vw;
+	background-image: url(images/fishing.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.form {
+	border-radius: 8px;
+	/* box-shadow: 1px 1px 1px 1px black;	 */
+	position: absolute;
+	top: 60px;
+	left: 80px;
+	background-color: white;
+	padding: 20px;
+	max-width: 400px;
+	position: relative;
+	height: 90%;
+}
+
+.form h1 {
+	font-weight: bold;
+	color: rgb(75, 75, 75);
+}
+
+.form input {
+    width: 100%;
+}
+
+.form input[type=text] {
+    width: 100%;
+    padding: 4px 12px;
+    margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+.form textarea {
+	resize: none;
+	width: 100%;
+}
